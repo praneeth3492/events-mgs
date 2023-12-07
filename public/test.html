@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        .banner {
+            position: relative;
+            width: 100%;
+            max-height: 1080px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+
+        .form-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255,255,255,0.7);
+            padding: 20px;
+        }
+
+       /* Hide mobile image by default */
+.mobile-banner {
+    display: none;
+}
+
+/* Desktop-specific styles */
+.desktop-banner {
+    display: block;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    .banner {
+        max-height: none;
+    }
+
+    .form-container {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    /* Hide desktop image on mobile and show the mobile image */
+    .desktop-banner {
+        display: none;
+    }
+    
+    .mobile-banner {
+        display: block;
+    }
+}
+
+        
+            .form-container {
+                position: static;
+                transform: none;
+                margin-top: 20px;
+            }
+
+            .desktop-banner {
+                display: none;
+            }
+
+            .mobile-banner {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <!-- Desktop Image -->
+    <img src="assets2/images/background/banner.png" alt="Banner" class="desktop-banner">
+    
+    <!-- Mobile Image -->
+    <img src="assets2/images/background/banner-mobile.png" alt="Banner" class="mobile-banner">
+    
+    <!-- Form Container -->
+    <div class="form-container">
+        <!-- Your form code goes here -->
+        <form action="#" method="post" onsubmit="submitt(); return false;">
+            <!-- ... rest of your form fields ... -->
+        </form>
+    </div>
+</div>
+
+<script>
+    function submitt(event) {
+        // Your submit logic here...
+    }
+
+    function validateMobile(element) {
+        // Your validation logic here...
+    }
+</script>
+
+</body>
+</html>

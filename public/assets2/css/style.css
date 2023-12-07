@@ -1,0 +1,5645 @@
+ 
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+ 
+body,
+html {
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 13px;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #aaaaaa;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.wrapper {
+	background-color: #fafafa;
+}
+
+* {
+	outline: none;
+}
+::-moz-selection {
+ text-shadow: none;
+}
+
+::selection {
+	background-color: #ffa40c;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+a {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	color: #ffa40c;
+}
+
+a:hover {
+	color: #c2a073;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #c2a073;
+	outline: none;
+	text-decoration: none;
+}
+
+a:active {
+	color: #c2a073;
+	outline: none;
+	text-decoration: none;
+}
+
+textarea {
+	resize: none;
+}
+
+button.btn {
+	margin-bottom: 0;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn.active.focus {
+	outline: none;
+}
+
+.modal-backdrop {
+	z-index: 1020;
+	background-color: rgba(34, 34, 34, 0.95);
+}
+
+.fullscreen {
+	height: 100vh !important;
+}
+
+/* Custom, iPhone Retina */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+.fullscreen {
+	height: auto !important;
+}
+}
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/* Heading Text */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #233565;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin: 0 0 28px;
+	line-height: 1.2;
+}
+
+.h1,
+h1 {
+	font-size: 52px;
+}
+
+.h2,
+h2 {
+	font-size: 42px;
+}
+
+.h3,
+h3 {
+	font-size: 38px;
+}
+
+.h4,
+h4 {
+	font-size: 32px;
+}
+
+.h5,
+h5 {
+	font-size: 24px;
+}
+
+.h6,
+h6 {
+	font-size: 18px;
+}
+
+p {
+	color: #000000;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.lead {
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+/* Aligning Text */
+.text--left {
+	text-align: left !important;
+}
+
+.text--right {
+	text-align: right !important;
+}
+
+.text--center {
+	text-align: center !important;
+}
+
+.text--just {
+	text-align: justify !important;
+}
+
+.align--top {
+	vertical-align: top;
+}
+
+.align--bottom {
+	vertical-align: bottom;
+}
+
+.align--middle {
+	vertical-align: middle;
+}
+
+.align--baseline {
+	vertical-align: baseline;
+}
+
+/* Weight Text */
+.bold {
+	font-weight: bold;
+}
+
+.regular {
+	font-weight: normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.break-word {
+	word-wrap: break-word;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+/* Text Color */
+.text-white {
+	color: #ffffff !important;
+}
+
+.text-gray {
+	color: #f6f7fb !important;
+}
+
+.text-black {
+	color: #363636;
+}
+
+.text-theme {
+	color: #ffa40c;
+}
+
+.text--capitalize {
+	text-transform: capitalize !important;
+}
+
+.text--uppercase {
+	text-transform: uppercase !important;
+}
+
+.font-heading {
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-18 {
+	font-size: 24px;
+}
+
+.font-16 {
+	font-size: 16px;
+}
+
+.font-20 {
+	font-size: 20px;
+}
+
+.font-40 {
+	font-size: 40px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+text-center-xs {
+	text-align: center !important;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+text-center-sm {
+	text-align: center !important;
+}
+}
+
+.higlighted-style1 {
+	background-color: #ffa40c;
+	color: #fff;
+	padding: 5px 0;
+}
+
+.higlighted-style2 {
+	background-color: #363636;
+	color: #fff;
+	padding: 5px 0;
+}
+
+.higlighted-style3 {
+	background-color: #f6f7fb;
+	color: #ffa40c;
+	padding: 5px 0;
+}
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+.color-heading {
+	color: #363636 !important;
+}
+
+.color-theme {
+	color: #ffa40c !important;
+}
+
+.color-white {
+	color: #ffffff !important;
+}
+
+.color-gray {
+	color: #f6f7fb !important;
+}
+
+/*------------------------------------*\
+    #Align
+\*------------------------------------*/
+address,
+blockquote,
+dd,
+dl,
+fieldset,
+form,
+ol,
+p,
+pre,
+table,
+ul {
+	margin-bottom: 20px;
+}
+
+section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+/* All margin */
+.m-0 {
+	margin: 0 !important;
+}
+
+.m-xs {
+	margin: 10px;
+}
+
+.m-sm {
+	margin: 20px;
+}
+
+.m-md {
+	margin: 40px;
+}
+
+.m-lg {
+	margin: 80px;
+}
+
+/* top margin */
+.mt-0 {
+	margin-top: 0;
+}
+
+.mt-xs {
+	margin-top: 10px;
+}
+
+.mt-10 {
+	margin-top: 10px !important;
+}
+
+.mt-20 {
+	margin-top: 20px !important;
+}
+
+.mt-30 {
+	margin-top: 30px !important;
+}
+
+.mt-40 {
+	margin-top: 40px !important;
+}
+
+.mt-50 {
+	margin-top: 50px !important;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-70 {
+	margin-top: 70px !important;
+}
+
+.mt-80 {
+	margin-top: 80px !important;
+}
+
+.mt-90 {
+	margin-top: 90px !important;
+}
+
+.mt-100 {
+	margin-top: 100px !important;
+}
+
+.mt-150 {
+	margin-top: 150px;
+}
+
+/* bottom margin */
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mb-10 {
+	margin-bottom: 10px !important;
+}
+
+.mb-20 {
+	margin-bottom: 20px !important;
+}
+
+.mb-30 {
+	margin-bottom: 30px !important;
+}
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
+.mb-40 {
+	margin-bottom: 40px !important;
+}
+
+.mb-60 {
+	margin-bottom: 60px !important;
+}
+
+.mb-70 {
+	margin-bottom: 70px !important;
+}
+
+.mb-80 {
+	margin-bottom: 80px !important;
+}
+
+.mb-90 {
+	margin-bottom: 90px !important;
+}
+
+.mb-100 {
+	margin-bottom: 100px !important;
+}
+
+.mb-150 {
+	margin-bottom: 150px !important;
+}
+
+/* right margin */
+.mr-0 {
+	margin-right: 0;
+}
+
+.mr-30 {
+	margin-right: 30px !important;
+}
+
+.mr-50 {
+	margin-right: 50px;
+}
+
+.mr-60 {
+	margin-right: 60px;
+}
+
+.mr-150 {
+	margin-right: 150px;
+}
+
+/* left margin */
+.ml-0 {
+	margin-left: 0;
+}
+
+.ml-xs {
+	margin-left: 10px;
+}
+
+.ml-sm {
+	margin-left: 20px;
+}
+
+.ml-md {
+	margin-left: 40px;
+}
+
+.ml-lg {
+	margin-left: 80px;
+}
+
+.ml-30 {
+	margin-left: 30px !important;
+}
+
+.ml-50 {
+	margin-left: 50px;
+}
+
+.ml-60 {
+	margin-left: 60px;
+}
+
+.ml-150 {
+	margin-left: 150px;
+}
+
+/* All padding */
+.p-0 {
+	padding: 0 !important;
+}
+
+.p-xs {
+	padding: 10px;
+}
+
+.p-sm {
+	padding: 20px;
+}
+
+.p-md {
+	padding: 40px;
+}
+
+.p-lg {
+	padding: 80px;
+}
+
+/* top padding */
+.pt-0 {
+	padding-top: 0 !important;
+}
+
+.pt-20 {
+	padding-top: 20px !important;
+}
+
+.pt-30 {
+	padding-top: 30px !important;
+}
+
+.pt-40 {
+	padding-top: 40px !important;
+}
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+.pt-60 {
+	padding-top: 60px;
+}
+
+.pt-70 {
+	padding-top: 70px !important;
+}
+
+.pt-80 {
+	padding-top: 80px;
+}
+
+.pt-90 {
+	padding-top: 90px;
+}
+
+.pt-100 {
+	padding-top: 100px !important;
+}
+
+.pt-150 {
+	padding-top: 150px !important;
+}
+
+/* bottom padding */
+.pb-0 {
+	padding-bottom: 0 !important;
+}
+
+.pb-30 {
+	padding-bottom: 30px;
+}
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+
+.pb-70 {
+	padding-bottom: 70px !important;
+}
+
+.pb-80 {
+	padding-bottom: 80px;
+}
+
+.pb-90 {
+	padding-bottom: 90px;
+}
+
+.pb-100 {
+	padding-bottom: 100px !important;
+}
+
+/* right padding */
+.pr-0 {
+	padding-right: 0;
+}
+
+.pr-xs {
+	padding-right: 10px;
+}
+
+.pr-sm {
+	padding-right: 20px;
+}
+
+.pr-md {
+	padding-right: 40px;
+}
+
+.pr-lg {
+	padding-right: 80px;
+}
+
+.pr-15 {
+	padding-right: 15px !important;
+}
+
+.pr-30 {
+	padding-right: 30px !important;
+}
+
+.pr-50 {
+	padding-right: 50px;
+}
+
+.pr-60 {
+	padding-right: 60px;
+}
+
+.pr-100 {
+	padding-right: 100px !important;
+}
+
+.pr-150 {
+	padding-right: 150px;
+}
+
+/* left padding */
+.pl-0 {
+	padding-left: 0 !important;
+}
+
+.pl-30 {
+	padding-left: 30px;
+}
+
+.pl-50 {
+	padding-left: 50px;
+}
+
+.pl-60 {
+	padding-left: 60px;
+}
+
+.pl-100 {
+	padding-left: 100px !important;
+}
+
+.pl-150 {
+	padding-left: 150px;
+}
+
+/* Postions */
+.fixed {
+	position: fixed;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.static {
+	position: static;
+}
+
+/* Zindex*/
+.zindex-1 {
+	z-index: 1;
+}
+
+.zindex-2 {
+	z-index: 2;
+}
+
+.zindex-3 {
+	z-index: 3;
+}
+
+/* Borders */
+.border-all {
+	border: 1px solid #ffa40c;
+}
+
+.border-top {
+	border-top: 1px solid #ffa40c;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #ffa40c;
+}
+
+.border-right {
+	border-right: 1px solid #ffa40c;
+}
+
+.border-left {
+	border-left: 1px solid #ffa40c;
+}
+
+/* Display */
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.hide {
+	display: none;
+}
+
+.flex {
+	display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+
+section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.text-center-xs {
+	text-align: center !important;
+}
+
+.pull-none-xs {
+	float: none !important;
+	text-align: center !important;
+}
+
+.mb-15-xs {
+	margin-bottom: 15px;
+}
+
+.mb-30-xs {
+	margin-bottom: 30px !important;
+}
+
+.mb-50-xs {
+	margin-bottom: 50px;
+}
+
+.mb-60-xs {
+	margin-bottom: 60px !important;
+}
+
+.p-none-xs {
+	padding-right: 0;
+	padding-left: 0;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.text-center-sm {
+	text-align: center !important;
+}
+
+.mb-0-sm {
+	margin-bottom: 0;
+}
+
+.mb-15-sm {
+	margin-bottom: 15px;
+}
+
+.mb-30-sm {
+	margin-bottom: 30px !important;
+}
+
+.mb-50-sm {
+	margin-bottom: 50px;
+}
+
+.mb-60-sm {
+	margin-bottom: 60px;
+}
+
+.pb-15-sm {
+	padding-bottom: 15px;
+}
+
+.pb-30-sm {
+	padding-bottom: 30px;
+}
+
+.pb-50-sm {
+	padding-bottom: 50px;
+}
+
+.pb-60-sm {
+	padding-bottom: 60px;
+}
+
+.p-none-sm {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.pull-none-sm {
+	float: none !important;
+	text-align: center !important;
+}
+}
+
+.border-b {
+	border-bottom: 1px solid #f6f7fb;
+}
+
+/*------------------------------------*\
+    #Grid
+\*------------------------------------*/
+.row-no-padding [class*="col-"] {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.col-lg-5ths,
+.col-md-5ths,
+.col-sm-5ths,
+.col-xs-5ths {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-xs-5ths {
+	width: 20%;
+	float: left;
+}
+
+@media (min-width: 768px) {
+
+.col-sm-5ths {
+	width: 20%;
+	float: left;
+}
+}
+
+@media (min-width: 992px) {
+
+.col-md-5ths {
+	width: 20%;
+	float: left;
+}
+}
+
+@media (min-width: 1200px) {
+
+.col-lg-5ths {
+	width: 20%;
+	float: left;
+}
+}
+
+.col-content {
+	padding: 120px 100px 90px 120px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.col-content {
+	padding: 40px !important;
+}
+}
+
+/* Small Devices, Tablets */
+.col-img {
+	height: 600px !important;
+	padding: 60px;
+	overflow: hidden;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.col-img {
+	height: auto;
+	min-height: 600px;
+}
+}
+
+/* Postion Helpers */
+.pos-fixed {
+	position: fixed;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.pos-absolute {
+	position: absolute;
+}
+
+.pos-static {
+	position: static;
+}
+
+.pos-top {
+	top: 0;
+}
+
+.pos-bottom {
+	bottom: 0;
+}
+
+.pos-right {
+	right: 0;
+}
+
+.pos-left {
+	left: 0;
+}
+
+.pos-vertical-center {
+	position: relative;
+	top: 50%;
+	-webkit-transform: perspective(1px) translateY(-50%);
+	-moz-transform: perspective(1px) translateY(-50%);
+	-o-transform: perspective(1px) translateY(-50%);
+	transform: perspective(1px) translateY(-50%);
+}
+
+.height-700 {
+	height: 700px !important;
+}
+
+.height-500 {
+	height: 500px !important;
+}
+
+.height-800 {
+	height: 800px !important;
+}
+
+@media only screen and (min-width: 992px) {
+
+.hidden-lg,
+ .hidden-md {
+	display: none;
+}
+}
+
+/*------------------------------------*\
+    #BACKGROUNDS
+\*------------------------------------*/
+.bg-theme {
+	background-color: #283566  !important;
+}
+
+.bg-gray {
+	background-color: #f6f7fb !important;
+}
+
+.bg-white {
+	background-color: #1d3564 !important;
+}
+
+.bg-green {
+	background-color: #c3d8ce !important;
+}
+
+
+.bg-dark {
+	background-color: #363636 !important;
+}
+
+/* Background Image */
+.bg-section {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+ 
+}
+
+ 
+
+.bg-overlay:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.bg-overlay-light:before {
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+.bg-overlay-dark:before {
+	background-color: #363636;
+	opacity: 0.3;
+}
+
+.bg-overlay-theme:before {
+	background-color: #ffa40c;
+	opacity: 0.7;
+}
+
+.bg-parallex {
+	background-attachment: fixed;
+}
+
+.bg-ytvideo.bg-overlay:before {
+	z-index: 1;
+	opacity: .7;
+}
+
+/* Background Video */
+.bg-ytvideo {
+	position: absolute !important;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 0 !important;
+}
+
+.bg-video {
+	width: 100%;
+	overflow: hidden;
+	behavior: url(/PIE.htc);
+	transform: translateZ(0);
+	display: block;
+	border-radius: 0;
+}
+
+.bg-video iframe {
+	display: block;
+	position: absolute;
+	z-index: -2;
+}
+
+.bg-video .bg-player {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: url(polina.jpg) no-repeat;
+	min-height: 500px;
+}
+
+.bg-video .vidbg {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.bg-vyoutube {
+	z-index: 550;
+	text-align: center;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+.btn {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	z-index: 2;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 3px;
+	padding: 0;
+	width: 230px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.btn.active,
+.btn:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Button Primary */
+.btn--primary {
+	background-color: #ffa40c;
+	color: #ffffff;
+	border-color: #ffa40c;
+}
+
+.btn--primary:active,
+.btn--primary:focus,
+.btn--primary:hover {
+	background-color: #ffad24;
+	border-color: #ffad24;
+	color: #ffffff;
+}
+
+.bg-dark .btn--primary:active,
+.bg-dark .btn--primary:focus,
+.bg-dark .btn--primary:hover {
+	background-color: #ffad24;
+	color: #ffffff;
+}
+
+/* Button Secondary*/
+.btn--secondary {
+	background-color: #363636;
+	color: #ffffff;
+	border: 2px solid #363636;
+}
+
+.btn--secondary:active,
+.btn--secondary:focus,
+.btn--secondary:hover {
+	background-color: #ffa40c;
+	color: #ffffff;
+	border-color: #ffa40c;
+}
+
+/* Button White */
+.btn--white {
+	background-color: #ffffff;
+	color: #363636;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+}
+
+.btn--white:active,
+.btn--white:focus,
+.btn--white:hover {
+	background-color: #ffa40c;
+	color: #ffffff;
+	border-color: #ffa40c;
+}
+
+/* Button Block */
+.btn--block {
+	width: 100%;
+}
+
+.btn--auto {
+	width: auto;
+}
+
+/* Button Rounded */
+.btn--rounded {
+	border-radius: 26px;
+}
+
+/* Button Bordered */
+.btn--bordered {
+	background-color: transparent;
+}
+
+.btn--bordered.btn--primary {
+	color: #ffa40c;
+	border-color: #ffa40c;
+}
+
+.btn--bordered.btn--primary:active,
+.btn--bordered.btn--primary:focus,
+.btn--bordered.btn--primary:hover {
+	color: #ffffff;
+	background-color: #ffa40c;
+	border-color: #ffa40c;
+}
+
+.btn--bordered.btn--secondary {
+	color: #2c303d;
+	border-color: #e0e0e0;
+}
+
+.btn--bordered.btn--secondary:active,
+.btn--bordered.btn--secondary:focus,
+.btn--bordered.btn--secondary:hover {
+	color: #ffffff;
+	background-color: #363636;
+	border-color: #363636;
+}
+
+.btn--bordered.btn--white {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.btn--bordered.btn--white:active,
+.btn--bordered.btn--white:focus,
+.btn--bordered.btn--white:hover {
+	color: #ffa40c;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.btn--white.btn--secondary {
+	color: #363636;
+	border-color: #ffffff;
+	background-color: #ffffff;
+}
+
+.btn--white.btn--secondary:active,
+.btn--white.btn--secondary:focus,
+.btn--white.btn--secondary:hover {
+	color: #ffffff;
+	background-color: #ffa40c;
+	border-color: #ffa40c;
+}
+
+.bg-theme .btn--primary,
+.bg-overlay-theme .btn--primary {
+	background-color: #363636;
+	color: #ffffff;
+	border: none;
+}
+
+.portfolio-filter li a.active-filter,
+.portfolio-filter li a:hover {
+	color: #ffa40c;
+}
+
+.navbar-toggle {
+	border-color: #ffa40c;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-top: 35px;
+}
+
+/*------------------------------------*\
+    #FORMS
+\*------------------------------------*/
+label {
+	font-weight: 300;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+.form-control {
+	color: #aaaaaa;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 45px;
+	height: 45px;
+	border: 1px solid e0e0e0;
+	background: transparent;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	position: relative;
+	border-radius: 3px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control:focus {
+	border-color: #ffa40c;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Placeholder */
+.form-control::-webkit-input-placeholder {
+ color: #aaaaaa;
+}
+.form-control:-moz-placeholder {
+ color: #aaaaaa;
+}
+.form-control::-moz-placeholder {
+ color: #aaaaaa;
+}
+.form-control:-ms-input-placeholder {
+ color: #aaaaaa;
+}
+
+.input-group {
+	border-radius: 25px;
+	border: 1px solid #e0e0e0;
+	background-color: transparent;
+	overflow: hidden;
+	padding: 0;
+}
+
+.input-group .btn {
+	border-radius: 0 25px 25px 0;
+}
+
+.input-group .input-group-btn {
+	overflow: hidden;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.input-group .btn {
+	width: 120px;
+}
+}
+
+/* Small Devices, Tablets */
+/*------------------------------------*\
+    #Heading
+\*------------------------------------*/
+.heading .heading--title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	/* text-transform: capitalize; */
+	text-align: left;
+	/* margin-left: 50px; */
+
+}
+
+/* Example Media Queries */
+
+/* Small devices (phones, up to 600px) */
+@media only screen and (max-width: 600px) {
+    .heading .heading--title {
+        margin-left: 0x;
+    }
+}
+
+/* Medium devices (tablets, 601px and up to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .heading .heading--title {
+        margin-left: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 769px and up to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .heading .heading--title {
+        margin-left: 40px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 993px and up) */
+ 
+#portfolio-classic-3col {
+    background-color: #c6d8ce;
+}
+
+.heading .heading--title2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	/* text-transform: capitalize; */
+	text-align: left;
+	color: #ffffff;
+}
+
+/* For general mobile screens */
+@media only screen and (max-width: 480px) {
+	.heading .heading--title2 {
+		font-size: 1.5rem; /* Example, adjust based on your design */
+		margin-bottom: 20px; /* Adjust as necessary */
+		/* Add or modify additional properties as needed */
+	}
+}
+
+/* Optionally, for slightly larger mobile screens */
+@media only screen and (max-width: 768px) {
+	.heading .heading--title2 {
+		font-size: 2rem; /* Example, adjust based on your design */
+		margin-bottom: 25px; /* Adjust as necessary */
+		/* Add or modify additional properties as needed */
+	}
+}
+
+
+.heading .heading--desc {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0;
+	padding: 0 30px;
+}
+
+.divider--line {
+	position: relative;
+	height: 2px;
+}
+
+.divider--line:after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 50px;
+	background-color: #ffa40c;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.divider--center:after {
+	left: 50%;
+	margin-left: -25px;
+}
+
+.heading .divider--line + .heading--desc {
+	margin-top: 30px;
+}
+
+.heading .heading--desc + .divider--line {
+	margin-top: 37px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.heading .heading--title {
+	font-size: 30px;
+}
+}
+
+/* Small Devices, Tablets */
+/*------------------------------------*\
+    #LOADING-SECTION
+\*------------------------------------*/
+.preloader {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 99999;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+.header {
+	height: 100px;
+}
+
+.header-transparent {
+	background-color: transparent;
+}
+
+.header-transparent + .mtop-100,
+.header-transparent + .page-title {
+	position: relative;
+	margin-top: -100px;
+}
+
+/*------------------------------------*\
+    #Menu
+\*------------------------------------*/
+.header .navbar-collapse {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.header .navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	min-height: 100px;
+	border: none;
+}
+
+.header .navbar.affix {
+	top: 0;
+}
+
+.header .navbar-nav {
+	display: none;
+}
+
+.header .navbar.affix .navbar-nav {
+	display: block;
+}
+
+.header-bordered .navbar {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header .navbar .logo {
+	max-width: 100%;
+	height: auto;
+	line-height: 100px;
+}
+
+.navbar-nav:not(.nav-pos-right) {
+	margin-right: 200px;
+}
+
+.nav-bordered-right {
+	margin-right: 30px;
+}
+
+.nav-bordered-right + .module:first-of-type:before {
+	position: relative;
+	margin-left: 12px;
+}
+
+.nav-bordered-right + .module:first-of-type:before {
+	position: absolute;
+	top: 50%;
+	margin-top: -13px;
+	left: -46px;
+	content: "";
+	width: 2px;
+	height: 26px;
+	background-color: #c9c9c9;
+}
+
+.affix .nav-bordered-right + .module:first-of-type:before {
+	background-color: #c9c9c9;
+}
+
+.navbar-nav > li {
+	margin-right: 32px;
+}
+
+.navbar-nav > li > a {
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 400;
+	line-height: 100px;
+	color: #ffffff;
+	padding: 0;
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-nav > li.active > ul {
+	margin-top: 0;
+}
+
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+/* Menu Level #1 */
+.navbar-nav > li > a:before {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0;
+	height: 3px;
+	background: transparent;
+	content: '';
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.navbar-nav > li > a:hover::before,
+.navbar-nav > li.active > a:before {
+	background-color: #ffffff;
+	width: 100%;
+}
+
+.transparent-header .navbar {
+	background-color: transparent;
+	height: 101px;
+}
+
+/* Header Light */
+.header-light {
+	background-color: #ffffff;
+}
+
+.header-light .navbar .logo-dark {
+	display: inline-block;
+}
+
+.header-light .navbar .logo-light {
+	display: none;
+}
+
+.header-light .navbar .navbar-nav > li > a:hover::before,
+.header-light .navbar .navbar-nav > li.active > a:before {
+	background-color: #222222;
+}
+
+/* Header Fixed */
+.header-fixed .affix {
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+	-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+	display: block;
+}
+
+.header-fixed:not(.header-light) .navbar .logo-dark {
+	display: none;
+}
+
+.header-fixed .navbar.affix .logo-dark {
+	display: inline-block;
+}
+
+.header-fixed .navbar.affix .logo-light {
+	display: none;
+}
+
+.header-fixed .navbar.affix .module .module-icon i,
+.header-fixed .navbar.affix .navbar-nav > li > a {
+	color: #222222;
+}
+
+.header-fixed .navbar.affix .navbar-nav > li > a:hover::before,
+.header-fixed .navbar.affix .navbar-nav > li.active > a:before {
+	background-color: #222222;
+}
+
+/* Header Centered */
+.header-centered {
+	height: 255px;
+}
+
+.header-centered .navbar-collapse {
+	padding-right: 260px;
+	padding-left: 260px;
+}
+
+.header-centered .navbar {
+	top: 155px;
+}
+
+.header-centered .navbar.affix {
+	top: 0;
+}
+
+.header-centered .logo-centered {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+/* Header With Top Bar */
+.header-topbar {
+	height: 155px;
+}
+
+.header-topbar .navbar {
+	top: 55px;
+}
+
+.header-topbar .navbar.affix {
+	top: 0;
+}
+
+/* Header #3 */
+.header-3 .navbar-nav {
+	margin-right: 30px;
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-3 .navbar + .module:first-of-type:before {
+	position: relative;
+	margin-left: 12px;
+}
+
+/* Header #5 */
+.header-5 .container-fluid {
+	padding-right: 0;
+}
+
+.header-5 .module {
+	position: relative;
+	border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-5 .module .module-icon {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+/* Header #5 */
+.header-6 .container-fluid {
+	padding-right: 0;
+}
+
+.header-6 .navbar {
+	min-height: 79px;
+}
+
+.header-6 .navbar .logo {
+	height: 79px;
+	line-height: 79px;
+}
+
+.header-6 .module .module-icon {
+	line-height: 79px;
+}
+
+.header-6 .module .module-label {
+	top: 24px;
+	right: 17px;
+	left: auto;
+}
+
+.header-6 .navbar-nav > li {
+	margin-right: 0;
+}
+
+.header-6 .navbar-nav > li > a {
+	padding-right: 32px;
+	padding-left: 32px;
+	border-left: 1px solid rgba(255, 255, 255, 0.25);
+	line-height: 79px;
+}
+
+.header-6 .navbar-nav > li > .menu-item:before {
+	display: none;
+}
+
+.header-6 .navbar-nav > li.active,
+.header-6 .navbar-nav > li:hover {
+	background-color: rgba(34, 34, 34, 0.5);
+}
+
+.header-6 .module {
+	position: relative;
+	border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-6 .module .module-icon {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+/* Header Centered */
+.header-7 {
+	height: 305px;
+}
+
+.header-7 .navbar {
+	top: 205px;
+}
+
+.header-7 .navbar.affix {
+	top: 0;
+}
+
+/* Header #13 */
+.header-13 .logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -51px;
+}
+
+/* Header #10 */
+.header-10 .nav-bordered-right + .module:first-of-type:before {
+	background-color: #464d52;
+}
+
+/* Header #16 */
+.header-16 .navbar {
+	top: 30px;
+}
+
+.header-16 .navbar.affix {
+	top: 0;
+}
+
+/* Header #17 */
+.header-centered.header-17 {
+	height: 265px;
+}
+
+.header-centered.header-17 .navbar {
+	top: 165px;
+}
+
+.header-17 .navbar.affix {
+	top: 0;
+}
+
+/* Header Half */
+.header-half .navbar-nav > li > .menu-item:before {
+	bottom: 36px;
+}
+
+/* Container Bordered */
+.container-bordered {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	height: 100px;
+}
+
+/* Navbar Dark */
+.header-transparent.header-light .navbar.affix {
+	background-color: transparent;
+}
+
+.navbar.navbar--dark .logo-dark {
+	display: inline-block !important;
+}
+
+.navbar.navbar--dark .logo-light {
+	display: none;
+}
+
+.navbar.navbar--dark .module .module-icon,
+.navbar.navbar--dark .module .module-icon i,
+.navbar.navbar--dark .navbar-nav > li > a {
+	color: #222222;
+}
+
+.navbar.navbar--dark .navbar-nav > li > .menu-item:hover::before,
+.navbar.navbar--dark .navbar-nav > li.active > .menu-item:before,
+.header-8 .navbar.navbar--dark .module-menu .module-icon:after {
+	background-color: #222222;
+}
+
+/* Header Split */
+.header-split .logo-dark {
+	display: none;
+}
+
+.header-split .logo-light {
+	display: inline-block;
+}
+
+.header-split .module .module-icon i,
+.header-split .navbar-nav > li > a {
+	color: #222222;
+}
+
+.header-split .navbar-nav > li > .menu-item:hover::before,
+.header-split .navbar-nav > li.active > .menu-item:before {
+	background-color: #222222;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+.header .navbar {
+	top: 0;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffa40c;
+}
+
+.header-fixed .navbar.affix .navbar-nav > li > a {
+	color: #ffffff;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.header .container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.navbar-nav {
+	margin: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggle {
+	border-color: #ffa40c;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-top: 35px;
+	display: none;
+}
+
+.header .navbar .logo {
+	margin: 0 auto;
+	display: block;
+	text-align: CENTER;
+}
+
+.affix .navbar-toggle {
+	display: block;
+}
+
+.affix.navbar .logo {
+	margin: 0;
+	text-align: left;
+}
+
+.container > .navbar-header {
+	margin-left: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.container > .navbar-collapse {
+	width: 100%;
+	background-color: #ffffff;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffa40c;
+}
+
+.navbar-nav > li {
+	height: auto !important;
+	margin-right: 0;
+}
+
+.navbar-nav > li.pull-left {
+	float: none !important;
+}
+
+.navbar-nav li a {
+	line-height: 36px;
+	color: #ffffff;
+	padding-right: 0;
+	padding-left: 10px;
+	padding-top: 0;
+}
+
+.navbar-nav > li > a:before {
+	display: none;
+}
+
+.navbar-nav:not(.nav-pos-right) {
+	margin-right: 0;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.header .container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.navbar-header {
+	float: none !important;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.header .navbar .logo {
+	float: left;
+}
+
+.navbar-toggle {
+	border-color: #ffa40c;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-top: 35px;
+	display: block;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffa40c;
+}
+
+.navbar-fixed-top .navbar-collapse {
+	overflow: scroll !important;
+}
+
+.navbar-collapse.collapse {
+	display: none!important;
+}
+
+.collapse.in {
+	display: block !important;
+}
+
+.navbar-nav {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.navbar-nav > li {
+	float: none;
+}
+
+.container > .navbar-collapse {
+	width: 100%;
+	background-color: #ffffff;
+	margin-right: 0;
+}
+
+.navbar-nav > li {
+	height: auto !important;
+	margin-right: 0;
+}
+
+.navbar-nav > li.pull-left {
+	float: none !important;
+}
+
+.navbar-nav > li > a {
+	line-height: 36px !important;
+	color: #363636 !important;
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #ffa40c;
+}
+
+.navbar-nav > li:after {
+	display: none;
+}
+
+.navbar-nav > li.active {
+	border-bottom: none;
+}
+
+li a:hover,
+ li.open > a:focus {
+	color: #ffffff;
+}
+
+.nav > li > a:focus,
+ .nav > li > a:hover {
+	background-color: transparent;
+}
+
+.navbar-nav > li > a:before {
+	display: none;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 991px) {
+
+.navbar.navbar--dark .navbar-nav > li > a {
+	color: #ffffff;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+.navbar-nav > li {
+	margin-right: 16px;
+}
+}
+
+/*------------------------------------*\
+    #Hero
+\*------------------------------------*/
+.header-transparent + .slider {
+	margin-top: -100px;
+}
+
+.slider {
+	height: 800px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.slider .slide--item {
+	height: 800px;
+	
+
+}
+
+ 
+
+.slider .row-content {
+	padding-top: 10px;
+}
+
+  .slide--headline {
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 60px;
+	margin-bottom: 30px;
+	/* text-transform: capitalize; */
+	text-align: center;
+	 
+
+	 
+}
+
+ 
+
+.slider .slide--holder {
+	position: relative;
+}
+
+.slider .input-group {
+	border: none;
+}
+
+.slider .input-group .form-control {
+	background-color: #ffffff;
+}
+
+/* Slider Form */
+.slider-form {
+	padding-bottom: 50px;
+}
+
+.slider-form .row-content {
+	padding-top: 120px;
+}
+
+.slider-form .slide--headline {
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 30px;
+}
+
+.slider-form .slide--bio {
+	font-size: 22px;
+	line-height: 32px;
+	margin-bottom: 32px;
+}
+
+.slider-form .slide--action {
+	background: #ffffff;
+	padding: 10px;
+}
+
+.slider-form .slide--action h6 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 15px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.slider-form .slide--action p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+
+ 
+.btn--video {
+	line-height: 55px;
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.btn--video i {
+	width: 55px;
+	height: 55px;
+	line-height: 56px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	color: #363636;
+	margin-right: 15px;
+}
+
+.btn--video:hover {
+	color: #363636;
+}
+
+.btn--video:hover i {
+	background: #363636;
+	color: #ffffff;
+}
+
+.slider .bg-ytvideo {
+	min-height: 800px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.slider .row-content {
+	padding-top: 0px;
+}
+
+.slider .slide--headline {
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	margin-top: -327px;
+}
+
+.slider .slide--bio {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0 10px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.slider,
+ .slider .slide--item {
+	height: 500px;
+}
+
+.slider-form,
+ .slider .slide--item {
+	height: auto;
+	padding-bottom: 0px;
+}
+
+.slide--video {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.slider-form .slide--action {
+	padding: 20px;
+ 
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.slider,
+	 .slider .slide--item {
+		height: 600px;
+	}
+	.slider .row-content2 {
+		padding-top: 60px;
+	}
+	 
+
+		
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.slider .row-content2 {
+		padding-top: 0px;
+	}
+}
+.slider .row-content2 {
+	padding-top: 80px;
+}
+.slider .row-content {
+	padding-top: 0px;
+}
+
+.slider .slide--headline {
+	font-size: 38px;
+	line-height: 1.2;
+	margin-top: 75px;
+	font-weight: 400;
+}
+
+.slider .slide--bio {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.slider-form,
+ .slider .slide--item {
+	height: auto;
+	padding-bottom: 50px;
+}
+
+
+ 
+
+.slider-form .slide--action {
+	padding: 30px;
+}
+ 
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.slider {
+	font-size: 20px;
+	line-height: 1.2;
+	margin-top: 50px;
+
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.slider .slide--headline {
+	font-size: 24px;
+	line-height: 1.2;
+	margin-top:-275px;
+	font-weight: 400;
+}
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.slide--headline {
+	font-size: 20px;
+	line-height: 1.2;
+	margin-top: -200%;
+
+}
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.slider-form,
+ .slider .slide--item {
+	height: auto;
+	padding-bottom: 10px;
+}
+
+}
+
+/*------------------------------------*\
+    #Features
+\*------------------------------------*/
+.feature-panel {
+	position: relative;
+}
+
+.feature-panel .feature--icon {
+	color: #ffa40c;
+	font-size: 55px;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+
+.feature-panel .feature--icon i {
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	transition: all .3s linear;
+	display: inline-block;
+}
+
+.feature-panel .feature--icon:hover i {
+	-webkit-animation: pulse 0.9s infinite;
+	-moz-animation: pulse 0.9s infinite;
+	-ms-animation: pulse 0.9s infinite;
+	-o-animation: pulse 0.9s infinite;
+	animation: pulse 0.9s infinite;
+}
+
+.feature-panel .feature--content h3 {
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: 16px;
+	text-transform: capitalize;
+}
+
+.feature-panel .feature--content p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.feature-left .feature-panel {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.feature-left .feature-panel:hover {
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+
+.feature-left .feature-panel .feature--icon {
+	position: absolute;
+	left: 0;
+	top:-17px;
+	margin-bottom: 0;
+}
+
+.feature-left .feature-panel .feature--content {
+	padding-left: 68px;
+}
+
+.feature-left .feature-panel {
+	margin-bottom: 40px;
+}
+
+/* feature left circle  */
+.feature-left-circle .feature--content h3 {
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 29px;
+	margin-bottom: 15px;
+}
+
+.feature-left-circle .feature--content p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23px;
+	padding: 0;
+}
+
+.feature-left-circle .feature--icon {
+	width: 45px;
+	height: 45px;
+	line-height: 42px;
+	text-align: center;
+	border-radius: 50%;
+	color: #ffa40c;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	border: 2px solid #ffa40c;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.feature-left-circle .feature-panel:hover .feature--icon {
+	background: #ffa40c;
+	border-color: #ffa40c;
+	color: #ffffff;
+}
+
+.feature-divider {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top-color: #e0e0e0;
+}
+
+.feature-2 h3 {
+	font-size: 26px;
+	font-weight: 400;
+	margin-bottom: 35px;
+	padding-top: 80px;
+	text-transform: capitalize;
+}
+
+.feature-2 p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 29px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.feature-panel,
+ .feature-left .feature-panel {
+	margin-bottom: 30px;
+}
+
+.feature-panel .feature--icon {
+	margin-bottom: 10px;
+}
+
+.feature img {
+	max-width: 100%;
+	height: auto;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.feature-panel {
+	margin-bottom: 20px;
+}
+
+.feature-2 i {
+	font-size: 35px;
+}
+
+.feature-2 .divider--line {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.feature-2 h2 {
+	font-size: 25px;
+}
+
+.feature-2 p {
+	font-size: 15px;
+	line-height: 20px;
+}
+}
+
+/*------------------------------------*\
+    #Call To Action
+\*------------------------------------*/
+.cta h3 {
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 58px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.cta p {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+	margin-bottom: 48px;
+}
+
+.cta .btn {
+	height: 70px;
+	width: 300px;
+	font-size: 24px;
+	line-height: 70px;
+}
+
+ 
+
+/*------------------------------------*\
+    #Footer
+\*------------------------------------*/
+.footer {
+	background-color: #fff;
+	padding-top: 47px;
+	padding-bottom: 47px;
+}
+
+.footer--copyright,
+.footer--copyright a {
+	color: #999999;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: capitalize;
+}
+
+.footer--copyright i {
+	color: red;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.footer--copyright {
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+}
+
+/* Small Devices, Tablets */
+/*------------------------------------*\
+    #Carousel
+\*------------------------------------*/
+.carousel-dots .owl-controls {
+	margin-top: 50px;
+}
+
+.carousel-dots .owl-controls .owl-dots .owl-dot span {
+	height: 11px;
+	width: 11px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid rgba(100, 100, 100, 0.5);
+	margin: 0 4px;
+}
+
+.carousel-dots .owl-controls .owl-dots .owl-dot.active span {
+	background-color: #646464;
+	border-color: #646464;
+}
+
+.carousel-dots.carousel-white .owl-controls .owl-dots .owl-dot span {
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-dots.carousel-white .owl-controls .owl-dots .owl-dot.active span {
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.carousel-navs .owl-controls .owl-nav {
+	position: relative;
+}
+
+.carousel-navs .owl-controls .owl-nav [class*=owl-] {
+	position: absolute;
+	top: 50%;
+	height: 60px;
+	line-height: 60px;
+	color: #363636;
+	font-size: 0;
+	font-weight: 400;
+	text-align: center;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+	margin-top: -250px;
+}
+
+.carousel-navs .owl-controls .owl-nav [class*=owl-]:hover {
+	color: #ffa40c;
+	background-color: transparent;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-prev {
+	left: 0;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-prev:before {
+	font-family: 'Linearicons-Free';
+	content: "\e875";
+	font-size: 40px;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-next {
+	right: 0;
+}
+
+.carousel-navs .owl-controls .owl-nav .owl-next:before {
+	font-family: 'Linearicons-Free';
+	content: "\e876";
+	font-size: 40px;
+}
+
+.carousel-navs .owl-dots {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+
+.carousel-navs .owl-dots .owl-dot span {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.carousel-navs .owl-dots .owl-dot.active span,
+.carousel-navs .owl-dots .owl-dot:hover span {
+	background: #ffffff;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    height: auto;
+}
+
+/**/
+.slider-dots .owl-controls {
+	margin-top: 0;
+}
+
+.slider-dots .owl-controls .owl-dots {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+}
+
+.slider-dots .owl-controls .owl-dots .owl-dot span {
+	height: 11px;
+	width: 11px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	border: 2px solid rgba(0, 0, 0, 0.6);
+	margin: 0 4px;
+}
+
+.slider-dots .owl-controls .owl-dots .owl-dot.active span {
+	-moz-box-shadow: 0 0 0 2px #363636;
+	-webkit-box-shadow: 0 0 0 2px #363636;
+	box-shadow: 0 0 0 2px #ffffff;
+}
+
+.slider-navs .owl-controls .owl-nav [class*=owl-] {
+	position: absolute;
+	top: 50%;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	margin-top: -30px;
+	color: #ffffff;
+	font-size: 0;
+	font-weight: 400;
+	background-color: rgba(27, 26, 26, 0.5);
+	text-align: center;
+	padding: 0;
+	border-radius: 0;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+.slider-navs .owl-controls .owl-nav [class*=owl-]:hover {
+	color: #999999;
+	background-color: #ffffff;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-prev {
+	left: 30px;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-prev:before,
+.slider-navs .owl-controls .owl-nav .owl-next:before {
+	font-family: fontawesome;
+	font-size: 25px;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-prev:before {
+	content: "\f104";
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next {
+	right: 30px;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next:before {
+	content: "\f105";
+}
+
+.slider-navs .owl-dots {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+
+.slider-navs .owl-dots .owl-dot span {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider-navs .owl-dots .owl-dot.active span,
+.slider-navs .owl-dots .owl-dot:hover span {
+	background: #ffffff;
+}
+
+.slider-navs.slider-small .owl-controls .owl-nav .owl-next {
+	right: 0;
+}
+
+.slider-navs.slider-small .owl-controls .owl-nav .owl-prev {
+	left: 0;
+}
+
+.slider-navs.slider-shop .owl-controls .owl-dots .owl-dot span {
+	background-color: #363636;
+	border: 2px solid #ffffff;
+}
+
+.slider-navs.slider-shop .owl-controls .owl-dots .owl-dot.active span {
+	-moz-box-shadow: 0 0 0 2px #363636;
+	-webkit-box-shadow: 0 0 0 2px #363636;
+	box-shadow: 0 0 0 2px #363636;
+}
+
+.slider-theme.slider-navs .owl-controls .owl-nav [class*=owl-]:hover {
+	color: #363636;
+}
+
+.slider-theme.slider-dots .owl-controls .owl-dots .owl-dot span {
+	border-color: #ffa40c;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.carousel-dots .owl-controls {
+	margin-top: 20px;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-prev {
+	left: 0;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next {
+	right: 0;
+}
+
+.slider-navs .owl-controls .owl-nav .owl-next:before,
+ .slider-navs .owl-controls .owl-nav .owl-prev:before {
+	font-size: 20px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.slider-navs .owl-controls .owl-nav .owl-next:before,
+ .slider-navs .owl-controls .owl-nav .owl-prev:before {
+	font-size: 30px;
+}
+}
+
+/*------------------------------------*\
+    #Landing Page / Promo Page
+\*------------------------------------*/
+.landing-hero {
+	height: 100vh;
+	padding-top: 200px;
+}
+
+.landing-hero h1 {
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 55px;
+	text-transform: uppercase;
+}
+
+.landing-hero p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.landing-demos .portfolio-filter li a {
+	font-weight: 600;
+}
+
+.landing-demos .portfolio-item {
+	margin-bottom: 50px;
+}
+
+.landing-demos .portfolio-title h4 {
+	color: #363636;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 0;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+}
+
+
+ 
+
+.landing-demos .portfolio-img {
+	-moz-box-shadow: 0 2px 3px rgba(40, 40, 40, 0.1);
+	-webkit-box-shadow: 0 2px 3px rgba(40, 40, 40, 0.1);
+	box-shadow: 0 0 36px 4px rgba(0, 0, 0, 0.1);
+	background-color: #c0c0c0;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	-o-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+.landing-demos .portfolio-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+.landing-demos .portfolio-item:hover .portfolio-img {
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-o-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+
+.landing-demos .portfolio-item:hover img {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.landing-demos .portfolio-bio {
+	padding-top: 23px;
+}
+
+.landing-action {
+	padding-top: 200px;
+}
+
+.landing-action img {
+	margin-bottom: 50px;
+}
+
+.landing-action h2 {
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 50px;
+}
+
+.landing-featues {
+	padding-bottom: 50px;
+}
+
+.landing-featues .feature-box {
+	margin-bottom: 50px;
+}
+
+/* Portfolio Filter */
+.portfolio-filter {
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.portfolio-filter li a {
+	color: #363636;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1;
+	margin-right: 29px;
+	text-transform: capitalize;
+}
+
+.portfolio-filter li:last-child a {
+	margin-right: 0;
+}
+
+.portfolio-filter li a.active-filter,
+.portfolio-filter li a:hover {
+	color: #ffa40c;
+}
+
+/* Portfolio Item */
+.portfolio-item .portfolio--img {
+	position: relative;
+}
+
+.portfolio-item .portfolio--img img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*------------------------------------*\
+    #COLOR-SWITCHER
+\*------------------------------------*/
+.switcher-box {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	color: #222222;
+	left: 0px;
+	overflow: inherit;
+	padding: 0px;
+	position: fixed;
+	text-align: center;
+	top: 200px;
+	z-index: 999;
+}
+
+.switcher-box .gear-check {
+	background-color: #ffffff;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #dddddd;
+	border-left-color: transparent;
+	color: #222222;
+	cursor: pointer;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	padding-top: 4px;
+	position: absolute;
+	right: -39px;
+	text-align: center;
+	top: -1px;
+	width: 40px;
+}
+
+.switcher-box .gear-check i {
+	font-size: 30px;
+}
+
+.switcher-box .color-options {
+	display: none;
+	float: left;
+	padding: 5px 16px;
+	width: 200px;
+}
+
+.switcher-box ul {
+	margin-bottom: 0;
+}
+
+.switcher-box ul li {
+	border-radius: 5px;
+	cursor: pointer;
+	height: 30px;
+	margin: 0 10px 10px 0;
+	width: 30px;
+}
+
+.color-options h4 {
+	border-bottom: 3px solid #eeeeee;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 46px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.landing-hero {
+	height: auto;
+	padding-top: 60px;
+}
+
+.landing-hero h1 {
+	font-size: 34px;
+	line-height: 50px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.landing-hero {
+	height: auto;
+	padding-top: 100px;
+}
+
+.landing-hero h1 {
+	font-size: 50px;
+	line-height: 55px;
+}
+}
+
+/*------------------------------------*\
+	#Video
+\*------------------------------------*/
+.video-button .video--content {
+	width: 100%;
+	height: 460px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.video-button .video--button {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.video-button .video--button:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #5584ff;
+	opacity: 0.1;
+}
+
+.video--content .video--button .popup-video {
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 50%;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	background-color: #ffa40c;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	position: relative;
+	top: 50%;
+	margin-top: -40px;
+	left: 50%;
+	margin-left: -40px;
+}
+
+.video--content .video--button .popup-video:hover {
+	background-color: #363636;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.video-button .video--content {
+	height: 260px;
+}
+}
+
+/*------------------------------------*\
+    #Client
+\*------------------------------------*/
+.clients {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.clients img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block; /* To remove any default margins or padding */
+}
+
+.clients-carousel [class*="col-"] {
+	max-height: 80px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+.client img {
+	margin-bottom: 20px;
+}
+}
+
+  /* Styles for blue-container */
+.blue-container {
+    padding: 20px;
+    background-color: #1b3a66; /* Bootstrap's primary blue color, you can adjust as needed */
+    color: white; /* Text color, assuming you want it to be white */
+	padding-bottom: 20px;
+	margin-top: -7%;
+}
+
+@media (min-width: 1201px) {
+    .blue-container {
+		margin-top: -6%; /* Adjust styles for large desktop view or keep as is */
+    }
+}
+
+  /* Styles for blue-container */
+  .event-container {
+   
+    background-color: #1b3a66; /* Bootstrap's primary blue color, you can adjust as needed */
+    color: white; /* Text color, assuming you want it to be white */
+ 
+	position: relative; 
+	bottom: 0px; 
+	width: 100%; 
+ 
+}
+
+@media (min-width: 1201px) {
+    .event-container {
+		margin-top: -6%; /* Adjust styles for large desktop view or keep as is */
+    }
+}
+
+
+/* Styles for blue-container */
+.event-container2 {
+   
+    background-color: #1b3a66; /* Bootstrap's primary blue color, you can adjust as needed */
+    color: white; /* Text color, assuming you want it to be white */
+ 
+	position: relative; 
+	bottom: 50px; 
+	width: 100%; 
+ 
+}
+
+ 
+
+
+
+.timings {
+    align-items: center; /* Center align items vertically */
+}
+
+/* Style for the icons and text within col-lg-4 */
+.col-lg-4 {
+    /* display: flex; */
+    align-items: center;
+    position: relative;
+    padding: 10px 50px; /* Add some vertical padding for better visual spacing */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+{
+
+	.col-lg-4 {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 10px 50px; /* Add some vertical padding for better visual spacing */
+	 
+	}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+{
+	.col-lg-4 span {
+		font-size: 1.2rem; /* Adjust this value to your desired size */
+	}
+}
+
+
+.col-lg-4:not(:last-child)::after {
+    content: ""; 
+    position: absolute;
+    height: 50%; /* Adjusts the height of the line */
+    border-right: 1px solid white; /* The actual line */
+    right: 0; /* Positions it to the right edge of the col-lg-4 */
+    top: 25%; /* Centers it vertically */
+}
+
+/* Style for the icons for visual separation and alignment */
+.col-lg-4 i {
+    margin-right: 10px;
+    font-size: 2.5rem; /* You can adjust this size as per your design */
+}
+
+.col-lg-4 span {
+    font-size: 1.5rem; /* Adjust this value to your desired size */
+}
+
+/* For mobile devices with a max width of 767px (typical breakpoint for Bootstrap) */
+@media (max-width: 767px) {
+    .col-lg-4 i {
+        margin-right: 5px; /* Adjust as per your mobile design */
+        font-size: 1rem; /* Adjust as per your mobile design */
+    }
+
+    .col-lg-4 span {
+        font-size: 1rem; /* Adjust as per your mobile design */
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    /* Remove horizontal lines for smaller screens as columns stack */
+    .col-lg-4:not(:last-child)::after {
+        display: none;
+    }
+}
+
+
+/* icon css start header */
+.feature--icon img {
+    /* Add your desired styles here. For demonstration purposes, I'm adding some basic styles. */
+    width: 10%; /* Adjust the width as needed */
+    /* height: 50px; Adjust the height as needed */
+    /* Makes the image circular */
+    /* display: block; Ensures the image is a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+/* For extra small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+    .feature--icon img {
+        width: 10%; /* Adjust the width for mobile view */
+		margin-top: -10px;
+        /* Add any other styles specific to this breakpoint */
+    }
+}
+
+/* For small devices (phones, 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .feature--icon img {
+        width: 10%; /* Adjust the width for larger mobile view */
+        /* Add any other styles specific to this breakpoint */
+    }
+}
+
+/* For medium devices (tablets, 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .feature--icon img {
+        width: 15%; /* Adjust the width for tablet view */
+        /* Add any other styles specific to this breakpoint */
+    }
+}
+
+/* For large devices (desktops, 993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .feature--icon img {
+        width: 12%; /* Adjust the width for desktop view */
+        /* Add any other styles specific to this breakpoint */
+    }
+}
+
+/* For extra large devices (large desktops, 1201px and above) */
+@media (min-width: 1201px) {
+    .feature--icon img {
+        width: 10%; /* You can revert to the original or keep it as needed */
+        /* Add any other styles specific to this breakpoint */
+    }
+}
+
+ 
+
+
+/* By default, hide the horizontal lines */
+ 
+
+/* Add a bottom border to each panel for mobile and tablet views */
+ 
+
+.multi-column-text {
+    column-count: 2; /* Number of columns */
+    column-gap: 50px; /* Gap between columns */
+	text-align: left;
+	margin-left:-3%
+}
+
+@media (max-width: 767px) { /* Adjust for mobile view */
+    .multi-column-text {
+        column-count: 1;
+    }
+}
+
+.feature-panel {
+    margin-bottom: 30px; /* Adjust the value as needed */
+}
+
+/* Remove margin from the last feature panel in each row */
+.col-md-6:last-child .feature-panel {
+    margin-bottom: 0;
+}
+
+/* Base styles for .image-with-text and its child elements */
+.image-with-text {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-with-text img {
+    width: 100%;
+    height: auto;
+}
+
+.image-with-text2 {
+    position: relative;
+    width: 100%;
+    height:400px;
+    overflow: hidden;
+}
+
+.image-with-text2 img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 1870px; /* or whatever width you want for 1920px screens */
+    }
+}
+
+.image-with-text img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.overlay-text p,
+.overlay-text h4 {
+    color: #fff;
+}
+
+.overlay-text p {
+    text-align: left;
+    flex: 1;
+}
+
+/* Base styles for text inside .overlay-text */
+.overlay-text h2,
+.overlay-text h4 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.overlay-text h4 {
+    font-size: 18px;
+}
+
+/* Base styles for .enquiry-button */
+.enquiry-button {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: #283566;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 37px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.enquiry-button:hover {
+    background-color: #ffffff;
+    color: #283566;
+}
+
+/* Media Queries */
+
+/* For mobile phones in portrait mode */
+/* For mobile phones in portrait mode */
+@media (max-width: 479px) {
+    .overlay-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10%; /* Increase padding for breathing space */
+        text-align: center; /* Center text alignment */
+    }
+	.image-with-text {
+        height: 200px; /* Reduced height for smaller screens */
+    }
+	
+
+    .overlay-text {
+        margin-bottom: 10px; /* Ensure there's some space between the text and the button */
+    }
+
+    .overlay-text h2 {
+        font-size: 16px; /* Decreased size */
+        margin-bottom: 5px; /* Add a small margin to give spacing between h2 and h4 */
+    }
+
+    .overlay-text h4 {
+        font-size: 12px; /* Decreased size */
+    }
+
+    .enquiry-button {
+        padding: 10px 15px; /* Slightly reduced padding */
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .enquiry-button {
+        /* Your styles for 1920px screens go here */
+        /* Example: */
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}	
+
+
+/* For tablets in portrait mode */
+@media (min-width: 480px) and (max-width: 767px) {
+    .overlay-content {
+        padding: 0 3%;
+    }
+
+    .overlay-text h2 {
+        font-size: 18px;
+    }
+
+    .overlay-text h4 {
+        font-size: 12px;
+    }
+
+    .enquiry-button {
+        font-size: 8px;
+    }
+}
+
+/* For tablets in landscape mode and smaller desktops/laptops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .overlay-text h2 {
+        font-size: 32px;
+    }
+
+    .overlay-text h4 {
+        font-size: 26px;
+    }
+
+    .enquiry-button {
+        font-size: 12px;
+    }
+}
+
+/* For large desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .overlay-text h2 {
+        font-size: 40px;
+    }
+
+    .overlay-text h4 {
+        font-size: 30px;
+    }
+
+    .enquiry-button {
+        font-size: 21px;
+    }
+}
+
+/* For extra large desktops */
+@media (min-width: 1200px) {
+    .overlay-text h2 {
+        font-size: 40px;
+    }
+
+    .overlay-text h4 {
+        font-size: 34px;
+    }
+
+    .enquiry-button {
+        font-size: 18px;
+		text-align: center;
+		font-weight: 600;
+    }
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    max-height: 500px; /* Adjust according to your needs */
+}
+
+.carousel-slides {
+    display: flex;
+    transition: all 0.3s;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.carousel-image:first-child {
+    display: block;
+}
+
+ 
+ 
+/* Remove the gray shadow from the carousel controls */
+ 
+
+
+
+
+.accordion {
+    background-color: #f7f7f7; /* Lighter shade for a more modern look */
+    color: #333; /* Darker text for better contrast */
+    cursor: pointer;
+    padding: 12px; /* Increased padding for better spacing */
+    width: 100%;
+    border: 1px solid #d4d4d4; /* Subtle border for depth */
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Added transition for box-shadow */
+    border-radius: 4px; /* Softened edges */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin-bottom: 0px; /* Space between each accordion item */
+}
+
+.accordion:hover, .active {
+    background-color: #e0e0e0; /* Smooth color transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow on hover for depth */
+}
+
+.panel {
+    padding: 0 20px; /* Consistent padding with accordion */
+    display: none;
+    background-color: #ffffff; /* Pure white for clear differentiation */
+    overflow: hidden;
+    border-radius: 0 0 4px 4px; /* Rounded bottom edges consistent with accordion top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+.accordion-arrow {
+    float: right; /* Position the arrow to the right */
+    transition: transform 0.3s; /* Transition for rotating the arrow */
+}
+
+.accordion.active .accordion-arrow {
+    transform: rotate(180deg); /* Rotate the arrow upward when the accordion is active */
+}
+
+
+.google-map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.google-map-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    overflow: hidden; /* This ensures the border-radius affects the iframe inside */
+}
+
+
+.google-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#feature4 {
+    background-color: #f3ead8; /* This is a light gray color; you can replace it with your desired color. */
+}
+
+#feature5 {
+    background-color: #1d3564; /* This is a light gray color; you can replace it with your desired color. */
+}
+
+.feature-5 p {
+	font-size: 16px;
+	color: white;
+	font-weight: 400;
+	line-height: 29px;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #233565, #233565);
+    color: white; /* Font color */
+    border: none; /* Removing default borders */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Top/bottom padding of 12px, left/right padding of 24px */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Bold font */
+    cursor: pointer; /* Hand cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    outline: none; /* Removing default outline */
+    text-align: center; /* Aligning text to the center */
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #4b6cb7, #182848); /* Slightly darker gradient on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px); /* Push down effect on active/click */
+}
+
+
+.white-bg {
+    background-color: white;
+}
+
+
+#feature6 {
+    background-color: black;
+    padding: 20px 0; /* Add padding to top and bottom of section */
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; /* Space between icons */
+    transition: opacity 0.3s; /* For a simple fade effect on hover */
+}
+
+.social-icon:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+
+.enquiry-text {
+    font-size: 18px;      /* Change font size */
+    color: #2c3e50;      /* Change text color */
+    font-weight: bold;   /* Make text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    /* Add any other styles as needed */
+}
+
+
+.contact-info2 {
+    display: flex;
+    align-items: start; /* Align the icon and the text at their top edge */
+    gap: 50px; /* Spacing between the icon and the text */
+}
+
+.feature--icon2 {
+    margin: 0;
+ 
+	
+	/* Remove any default margins */
+}
+
+.feature--icon2 img {
+    width: 32px;    /* Adjust this value according to your needs */
+    height: auto;   /* This ensures the aspect ratio of the image remains consistent */
+}
+
+
+
+/* Default styles */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.feature--icon2 img {
+    margin-right: 15px;
+    width: 30px;  /* Adjust according to your preference */
+    height: auto;
+}
+
+
+
+/* Tablet responsiveness */
+@media only screen and (max-width: 768px) {
+    .contact-info2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .info-item {
+        flex: 0 0 48%; /* This means each info-item will take almost half the width (a little less to account for potential margin/padding) */
+    }
+}
+
+/* Mobile phone responsiveness */
+@media only screen and (max-width: 480px) {
+    .contact-info2 {
+        display: block;
+    }
+    .info-item {
+        flex: 0 0 100%;  /* Now, each info-item will take full width on mobile */
+        margin-bottom: 15px;
+    }
+    .col-sm-4, .col-sm-8 {
+        width: 100%;
+        padding: 0 0px;
+    }
+}
+
+
+p {
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+}
+
+.contact-item .feature--icon2 {
+	margin-right: 10px;
+	margin-top: -20px;
+}
+
+.contactus {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	/* text-transform: capitalize; */
+	text-align: left;
+	color: #ffffff;
+}
+
+.cta-banner {
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	/* text-transform: capitalize; */
+	text-align: left;
+	color: #ffffff;
+}
+
+
+.carousel-caption-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -20px;
+    padding-top: 40px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+
+
+    /* Text stroke (outline) */
+    /* -webkit-text-stroke: 0.25px rgb(0, 0, 0);   */
+    
+    /* Text shadow (drop shadow) */
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);   */
+}
+
+.footer-text{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 1px;
+	text-align: right;
+    padding-top: 1px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+   
+ /* my custom css starts here */
+
+ .banner-text {
+    color: white;
+    font-size: 2.5rem; /* Base font-size */
+    text-align: left;
+    font-weight: 500; /* Makes the text pop a bit more */
+    line-height: 1.3; /* Adjusts the spacing between lines */
+    margin: 0; /* Removes default margin of h3 */
+    max-width: 500px; /* To ensure the text doesn't stretch too far on wide screens */
+}
+
+/* Responsive adjustments */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .banner-text {
+        font-size: 2rem;
+    }
+}
+
+
+.banner-text2 {
+    color: white;
+    font-size: 2.5rem; /* Base font-size */
+    text-align: left;
+    font-weight: 500; /* Makes the text pop a bit more */
+    line-height: 1.3; /* Adjusts the spacing between lines */
+    margin: 0; /* Removes default margin of h3 */
+    max-width: 650px; /* To ensure the text doesn't stretch too far on wide screens */
+}
+
+/* Responsive adjustments */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .banner-text2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .banner-text2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+.slide--bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added some padding for better visual effect */
+    background-color: #ffffff14; /* Placeholder background color */
+}
+
+.slide--bio p {
+    color: white;
+    font-size: 1.5rem; /* Base font-size */
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4; /* Adjusts the spacing between lines */
+    margin: 5px; /* Removes default margin of p */
+}
+
+/* Responsive Adjustments */
+
+/* For tablets */
+@media (max-width: 992px) {
+    .slide--bio p {
+        font-size: 1.3rem;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+    .slide--bio p {
+        font-size: 1.1rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .slide--bio p {
+        font-size: 1rem;
+    }
+}
+
+.website-text {
+    font-family: 'Poppins', sans-serif; /* Using Arial for example, feel free to use any preferred font */
+    font-size: 1.2rem; /* This makes the text slightly larger than the default for emphasis */
+    font-weight: 400; /* Makes the text bold for emphasis */
+    color: #333; /* Dark color for readability, adjust as per your site's theme */
+    margin-bottom: 1.5rem; /* Adds more space below this paragraph for separation */
+    line-height: 1.6; /* For better readability */
+margin-left: 6%;
+
+}
+
+@media (max-width: 576px) {
+    .website-text {
+		margin-left: 0%;
+		
+    }
+}
+
+
+.residental-text {
+    font-family: 'Poppins', sans-serif; /* Using Arial for example, feel free to use any preferred font */
+    font-size: 1.2rem; /* This makes the text slightly larger than the default for emphasis */
+    font-weight: 400; /* Makes the text bold for emphasis */
+    color: #333; /* Dark color for readability, adjust as per your site's theme */
+    margin-bottom: 1.5rem; /* Adds more space below this paragraph for separation */
+    line-height: 1.6; /* For better readability */
+margin-left: 2%;
+
+}
+
+@media (max-width: 576px) {
+    .residental-text {
+		margin-left: 0%;
+    }
+}
+
+.cta-text {
+    font-family: 'Poppins', sans-serif; /* Using Arial for example, feel free to use any preferred font */
+    font-size: 2rem; /* This makes the text slightly larger than the default for emphasis */
+    font-weight: 400; /* Makes the text bold for emphasis */
+    color: #ffffff; /* Dark color for readability, adjust as per your site's theme */
+    /* Adds more space below this paragraph for separation */
+    line-height: 1; /* For better readability */
+}
+
+@media only screen and (max-width: 768px) {
+    .cta-text {
+        font-size: 1.5rem; /* Adjusted size for mobile screens */
+        line-height: 1.2; /* Adjusted line height for better readability on mobile */
+        /* Add any other adjustments you'd like for mobile here */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cta-text {
+        font-size: 1.2rem; /* Even smaller font size for very small screens */
+        /* Add any other adjustments specific to very small screens here */
+		/* margin-left: -45px; */
+    }
+}
+
+
+.cta-text3 {
+    font-family: 'Poppins', sans-serif; /* Using Arial for example, feel free to use any preferred font */
+    font-size: 2rem; /* This makes the text slightly larger than the default for emphasis */
+    font-weight: 400; /* Makes the text bold for emphasis */
+    color: #ffffff; /* Dark color for readability, adjust as per your site's theme */
+    /* Adds more space below this paragraph for separation */
+    line-height: 1; /* For better readability */
+}
+
+@media only screen and (max-width: 768px) {
+    .cta-text3 {
+        font-size: 1.5rem; /* Adjusted size for mobile screens */
+        line-height: 1.2; /* Adjusted line height for better readability on mobile */
+        /* Add any other adjustments you'd like for mobile here */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cta-text3{
+        font-size: 1.2rem; /* Even smaller font size for very small screens */
+        /* Add any other adjustments specific to very small screens here */
+		margin-left: -45px;
+    }
+}
+
+
+
+.cta-text2 {
+    font-family: 'Poppins', sans-serif; /* Using Arial for example, feel free to use any preferred font */
+    font-size: 2rem; /* This makes the text slightly larger than the default for emphasis */
+    font-weight: 400; /* Makes the text bold for emphasis */
+    color: #ffffff; /* Dark color for readability, adjust as per your site's theme */
+    /* Adds more space below this paragraph for separation */
+    line-height: 1; /* For better readability */
+}
+
+@media only screen and (max-width: 768px) {
+    .cta-text2 {
+        font-size: 1.2rem; /* Adjusted size for mobile screens */
+        line-height: 1.2; /* Adjusted line height for better readability on mobile */
+        /* Add any other adjustments you'd like for mobile here */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cta-text2 {
+        font-size: 1.0rem; /* Even smaller font size for very small screens */
+        /* Add any other adjustments specific to very small screens here */
+		margin-top: -25px;
+		 
+    }
+}
+
+
+.website-text2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Styles for displays of 1920x1280 at 150% scaling */
+@media screen and (width: 1280px) and (height: 853px) {
+    .website-text2 {
+        /* Adjust styles as needed for this resolution and scaling */
+        font-size: 1.2rem; /* Example adjustment, reduce font size */
+    }
+}
+
+/* Media query for mobile devices (up to 600px width) */
+@media only screen and (max-width: 600px) {
+    .website-text2 {
+        font-size: 1rem; /* Adjust font size for mobile readability */
+        /* Add more adjustments for mobile if needed */
+    }
+}
+
+/* Optional: Media query for tablets (between 601px and 1024px width) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .website-text2 {
+        font-size: 1.3rem; /* Adjust font size for tablets */
+        /* Add more adjustments for tablets if needed */
+    }
+}
+
+
+
+.new-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem; 
+    font-weight: 650; 
+    color: #1b3a66; 
+    margin-bottom: 1rem; 
+    text-align: left; 
+ /* margin-left: 18px; */
+    padding-top: 1.5rem; 
+	margin-left: 10px;
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .new-heading {
+        font-size: 2rem;  /* Adjust font-size for mobile */
+    }
+}
+
+/* For tablet screens (from 577px to 992px) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .new-heading {
+        font-size: 2.8rem;  /* Adjust font-size for tablet */
+    }
+}
+
+/* For desktop screens (above 992px) - Optional since we've defined the default style above */
+@media only screen and (min-width: 993px) {
+    .new-heading {
+        font-size: 2.5rem;  /* This can stay the same or be adjusted */
+    }
+}
+
+.new-heading2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: 650; 
+    color: #1b3a66; 
+    margin-bottom: 1rem; 
+    text-align: left; 
+	margin-left: 10px;
+ 
+    padding-top: 1.5rem; 
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .new-heading2 {
+        font-size: 2rem;  /* Adjust font-size for mobile */
+		margin-left: 0px;
+    }
+}
+
+.frequently {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem; 
+    font-weight: 650; 
+    color: #1b3a66; 
+    margin-bottom: 1rem; 
+    text-align: center; 
+	margin-left: 10px;
+ 
+    padding-top: 1.5rem; 
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .frequently {
+        font-size: 2rem;  /* Adjust font-size for mobile */
+    }
+}
+
+
+
+.curriculum {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; 
+    font-weight: 650; 
+    color: #1b3a66; 
+    margin-bottom: 1rem; 
+    text-align: left; 
+	margin-left: 5.5%;
+ 
+ 
+    padding-top: 1.5rem; 
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .curriculum {
+        font-size: 1.5rem;  /* Adjust font-size for mobile */
+		margin-left: 0%;
+    }
+}
+
+
+
+/* For tablet screens (from 577px to 992px) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .new-heading2 {
+        font-size: 2.8rem;  /* Adjust font-size for tablet */
+    }
+}
+
+/* For desktop screens (above 992px) - Optional since we've defined the default style above */
+@media only screen and (min-width: 993px) {
+    .new-heading2 {
+        font-size: 2.5rem;
+	
+    }
+}
+
+@media screen and (width: 1280px) and (height: 853px) {
+    .new-heading2 {
+        /* Adjust styles as needed for this resolution and scaling */
+        font-size: 2.2rem; /* Example: you can modify this value as per your design needs */
+    }
+}
+
+
+.custom-bg {
+    background-color: #f3ead8;
+}
+
+.custom-bg10
+{
+ 
+		position: relative;
+		color:#c6d8ce; 
+		padding-bottom: 20px;
+		margin-right: 50px !important;
+		margin-left: 50px !important;
+}
+
+
+.custom-bg2 {
+    position: relative;
+    color: white; 
+	padding-bottom: 20px;
+
+}
+
+.custom-bg5{
+    position: relative;
+	padding-bottom: 20px;
+	
+ 
+	
+}
+
+
+.bg-image {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0px 0; 
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .overlay-text {
+        /* Your specific styles for mobile go here. E.g. */
+        padding: 10px 10px;  /* Adjust padding for mobile */
+    }
+}
+
+/* For tablet screens (from 577px to 992px) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .overlay-text {
+        /* Your specific styles for tablet go here. E.g. */
+        padding: 20px 20px;  /* Adjust padding for tablet */
+    }
+}
+
+/* For desktop screens (above 992px) - Optional since we've defined the default style above */
+@media only screen and (min-width: 993px) {
+    .overlay-text {
+        padding: 0px 0;  /* This can stay the same or be adjusted */
+    }
+}
+
+
+
+.custom-bg2 {
+    position: relative; /* Set position relative so overlay-text can be positioned absolutely inside it */
+}
+
+.bg-image {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    display: block; /* Remove any extra spacing below the image */
+}
+
+.flex-container {
+    position: absolute; /* Position the overlay-text over the image */
+    top: 0;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center content vertically */
+    justify-content: left; /* Center content horizontally */
+
+}
+
+.flex-content {
+    text-align: left; /* Center the text inside the flex-content */
+    max-width: 500px; /* Limit the width of the content */
+}
+
+
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: white;
+    margin: 0; /* Remove the margin */
+}
+.sub-heading3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: white;
+   
+	width: 50%;
+}
+
+/* Media query for tablets (in portrait) */
+@media only screen and (max-width: 768px) {
+    .sub-heading3 {
+        font-size: 2rem; /* Adjust the font size for tablets */
+    }
+}
+
+/* Media query for larger mobile devices */
+@media only screen and (max-width: 600px) {
+    .sub-heading3 {
+        font-size: 1.2em; 
+		width: 90%;/* Adjust the font size for larger mobile devices */
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    .sub-heading3 {
+        font-size: 12px;
+		width: 90%; /* Adjust the font size for smaller mobile devices */
+		margin-top: 10px;
+    }
+}
+
+
+.sub-heading4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: white;
+   
+	width: 40%;
+}
+
+/* Media query for tablets (in portrait) */
+@media only screen and (max-width: 768px) {
+    .sub-heading4 {
+        font-size: 2rem; /* Adjust the font size for tablets */
+    }
+}
+
+/* Media query for larger mobile devices */
+@media only screen and (max-width: 600px) {
+    .sub-heading4 {
+        font-size: 1.2em; 
+		width: 90%;/* Adjust the font size for larger mobile devices */
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    .sub-heading4 {
+        font-size: 12px;
+		width: 90%; /* Adjust the font size for smaller mobile devices */
+		margin-top: 10px;
+    }
+}
+
+
+
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .sub-heading {
+        font-size: 1rem;  /* Adjust font-size for mobile */
+        max-width:100%;  
+		margin-left: -42px;   /* Make it wider on mobile for better readability */
+		width: 65%;
+    }
+}
+
+/* For tablet screens (from 577px to 992px) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .sub-heading {
+        font-size: 1.2rem;  /* Adjust font-size for tablet */
+    }
+}
+
+/* For desktop screens (above 992px) - Optional since we've defined the default style above */
+@media only screen and (min-width: 993px) {
+    .sub-heading {
+        font-size: 2.5rem;  /* This can stay the same or be adjusted */
+    }
+}
+
+
+.sub-heading2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 100px;
+    max-width: 500px;
+    line-height: 1.5em;
+    color: white;
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .sub-heading2 {
+        font-size: 1rem;  /* Adjust font-size for mobile */
+        max-width: 60%;     /* Make it wider on mobile for better readability */
+    }
+}
+
+/* For tablet screens (from 577px to 992px) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .sub-heading2 {
+        font-size: 1.2rem;  /* Adjust font-size for tablet */
+    }
+}
+
+/* For desktop screens (above 992px) - Optional since we've defined the default style above */
+@media only screen and (min-width: 993px) {
+    .sub-heading2 {
+        font-size: 2.5rem;  /* This can stay the same or be adjusted */
+    }
+}
+
+
+.custom-image-container {
+    position: relative; 
+	padding-bottom: 30px;
+}
+
+.custom-image {
+    width: 100%; 
+    display: block;
+	border-radius: 20px 20px 0 0; 
+
+
+}
+
+.image-caption {
+    background-color: #d0d0d0; 
+    padding: 5px; 
+    font-size: 1.2rem;
+    width: 100%; 
+	height: 75px;
+    border-radius: 0 0 20px 20px;  /* Only bottom corners rounded to match the image */
+	color: black;
+	font-weight: 550;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+ 
+ 
+}
+
+/* Media query for larger mobile devices */
+@media only screen and (max-width: 600px) {
+    .image-caption {
+        font-size: 1.2rem;   /* Adjust the font size for larger mobile devices */
+        height: 65px;       /* Adjust the height */
+        padding: 4px;       /* Adjust the padding */
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    .image-caption {
+        font-size: 1rem;    /* Adjust the font size for smaller mobile devices */
+        height: 55px;      /* Adjust the height */
+        padding: 3px;      /* Adjust the padding */
+    }
+}
+
+
+.custom-bg3 {
+    position: relative;
+    color: white; 
+}
+
+.custom-bg4 {
+    position: relative;
+    color:#c6d8ce; 
+	padding-bottom: 20px;
+	margin-right: 50px !important;
+    margin-left: 50px !important;
+	align-items: center;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    .custom-bg4 {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        /* Add or modify any other styles for mobile screens here */
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .custom-bg4 {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+        /* Add or modify any other styles for tablet screens here */
+    }
+}
+
+
+.custom-banner {
+ 
+		position: absolute;  /* this will position the form container over the image */
+		top: 1%;
+		left: 0;
+		width: 100%;  /* take up the full width of the parent */
+		height: 100%;  /* take up the full height of the parent */
+		/* ensure the overlay is above the image */
+		color:#c6d8ce; 
+ 
+	
+	/* Additional styles to make sure the images inside image-container2 cover the entire container */
+	
+}
+@media only screen and (max-width: 600px) {
+.custom-banner {
+ 
+	position: relative;  /* this will position the form container over the image */
+	top: 0%;
+	left: 0;
+	width: 100%;  /* take up the full width of the parent */
+	height: 100%;  /* take up the full height of the parent */
+	z-index: 2;  /* ensure the overlay is above the image */
+	color:#008d3f; 
+
+
+/* Additional styles to make sure the images inside image-container2 cover the entire container */
+
+}
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.desktop-image2, .mobile-image2 {
+	width: 100%;
+	height: auto;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    .custom-banner {
+ 
+	background-color: #182848;
+        /* Add or modify any other styles for mobile screens here */
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	.custom-banner {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+        /* Add or modify any other styles for tablet screens here */
+    }
+}
+
+ 
+
+
+.custom-bg6 {
+    position: relative;
+  	padding-bottom: 20px;
+	margin-right: 50px !important;
+    margin-left: 50px !important;
+	background-color: #1b3a66;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    .custom-bg6 {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        /* Add or modify any other styles for mobile screens here */
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .custom-bg6 {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+        /* Add or modify any other styles for tablet screens here */
+    }
+}
+
+/* For desktop screens larger than 1024px (optional if you want different styles for larger screens) */
+@media only screen and (min-width: 1025px) {
+    .custom-bg6 {
+        /* Add or modify any other styles for larger screens here */
+    }
+}
+
+
+
+.custom-image-container {
+    padding-left: 10px;
+    padding-right: 10px;
+	
+}
+
+ 
+
+
+
+.btn-responsive {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1d3564; /* Bootstrap primary color, adjust as needed */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+	font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-responsive:hover {
+    background-color: #000000; /* Darken color on hover for effect, adjust as needed */
+}
+
+
+
+
+.events-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.event-image:hover {
+    transform: scale(1.05);
+}
+
+.event-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 15px;
+}
+
+.event p {
+    font-size: 1.25rem;
+    margin: -20px 0;
+    color: white;
+    line-height: 1.75em;
+    margin-left: 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) { 
+    .events-heading {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .event p {
+        font-size: 1rem;
+        margin: -15px 0;
+        margin-left: 10px;
+    }
+}
+
+/* iPad Portrait Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .events-heading {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+
+    .event-title {
+        font-size: 2rem;
+        margin-left: 12px;
+    }
+
+    .event p {
+        font-size: 1.2rem;
+        margin: -18px 0;
+        margin-left: 12px;
+    }
+}
+
+/* iPad Landscape Styles */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .events-heading {
+        font-size: 2.8rem;
+        margin-bottom: 28px;
+    }
+
+    .event-title {
+        font-size: 2.3rem;
+        margin-left: 14px;
+    }
+
+    .event p {
+        font-size: 1.3rem;
+        margin: -19px 0;
+        margin-left: 14px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1280px) {
+    /* You can adjust styles for larger screens here if needed */
+}
+
+
+.footer {
+    background-color: #1d3564;
+    color: #fff;
+    padding: 30px 0;
+ 
+}
+
+.footer-map iframe {
+    border-radius: 10px; /* optional rounded corners */
+}
+
+.footer-contact {
+    padding: 20px;
+	font-size: 1.5em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.footer-phone, .footer-email, .footer-address {
+    margin-bottom: 10px;
+}
+
+hr {
+    border-top: 1px solid #555;
+}
+
+.footer-text{
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.contact-text{
+	color: white;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 576px) { /* Target screens smaller than 576px */
+    .col-sm-8.pt-20 {
+        padding-bottom: 0vh; /* Push the next content down by 50% of viewport height */
+    }
+}
+
+/* By default, show the desktop banner and hide the mobile banner */
+.banner-desktop {
+    display: block;
+	width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.banner-mobile {
+    display: none;
+}
+
+/* For devices with max width of 576px, show the mobile banner and hide the desktop banner */
+@media only screen and (max-width: 576px) {
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+		 
+    }
+}
+
+/* For devices with max width of 576px, show the mobile banner and hide the desktop banner */
+@media only screen and (max-width: 576px) {
+    .banner-desktop2 {
+        display: none;
+    }
+
+    .banner-mobile2 {
+        display: block;
+		width: 100%;
+		 
+    }
+}
+
+.banner-desktop2 {
+    display: block;
+	width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.banner-mobile2 {
+    display: none;
+}
+
+
+
+.slide-index
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .slide-index {
+        font-size: 18px;  /* Smaller font size for mobile screens */
+        /* Add other adjustments for mobile here, if needed */
+    }
+}
+@media only screen and (max-width: 480px) {
+    .slide-index {
+        font-size: 20xpx;  /* Even smaller font size for very small screens */
+        /* Add any other adjustments specific to very small screens here */
+    }
+}
+
+
+.overlay-content2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(15%, -50%);
+    text-align: left;
+}
+
+.overlay-content4 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateX(415%) translateY(-50%);
+    text-align: left;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .overlay-content4 {
+        /* Adjust styles for mobile here */
+        transform: translateX(10%) translateY(20%); /* Example: Reset horizontal translation to zero */
+    }
+}
+
+
+
+.overlay-content3 {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(5%, -50%);
+    text-align: left;
+	margin-right: 50px !important;
+    margin-left:  0px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .overlay-content3 {
+        transform: translate(2%, -50%); /* You can adjust the translation as needed for mobile */
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+		width: 65%;
+    }
+}
+
+.btn-admission {
+	display: inline-block;
+    padding: 10px 20px;
+    background-color: #1d3564; /* Bootstrap primary color, adjust as needed */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+	font-weight: 600;
+    transition: background-color 0.3s;
+
+	
+}
+
+@media only screen and (max-width: 576px) {
+    .overlay-content2 {
+        
+
+	 
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			transform: translate(10%, 0%);
+			text-align: left;
+		 
+	 
+		
+    }
+}
+
+
+/* Desktop styles */
+.overlay-content2 h3 {
+    font-size: 2rem; /* Adjust based on your desktop preference */
+}
+
+ 
+/* Mobile styles */
+@media only screen and (max-width: 576px) {
+    .overlay-content2 h3 {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+		font-weight: 600;
+    }
+
+    .btn-admission {
+        padding: 10px 10px; /* Smaller padding for mobile */
+        font-size: 0.8rem;
+		 /* Smaller font size for mobile */
+		 border-radius: 23px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .custom-bg5 .bg-image {
+      background-image: url('/assets2/images/cta_bg_mobile.png') !important; /* Use your mobile-specific image here */
+    }
+  }
+
+  button {
+    background-color: #233a67; /* Green background */
+    color: white;             /* White text */
+    padding: 7px 20px;       /* Padding around text */
+    margin: 0px 0;            /* Margin outside the button */
+    border: none;             /* No border */
+    cursor: pointer;          /* Hand cursor on hover */
+    font-family: Arial, sans-serif; /* Font type */
+    font-size: 18px;          /* Font size */
+	border-radius: 25px;
+}
+
+button:hover {
+    background-color: #a88451; /* Darker green when hovered */
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  .cta-banner-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: white;
+    margin: 0; /* Remove the margin */
+}
+
+/* Example media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .cta-banner-heading {
+        font-size: 1.8rem;
+        /* Adjust other properties as needed for this screen size */
+    }
+}
+
+/* Example media query for screens between 768px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+    .cta-banner-heading {
+        font-size: 2.2rem;
+        /* Adjust other properties as needed for this screen size */
+    }
+}
+
+/* You can add more media queries for different screen sizes or conditions. Adjust the values and properties accordingly. */
+
+
+/* Default styles for larger screens */
+.slide--headline, .slide-index, .enquiry-text {
+    display: block; /* Hide these elements on larger screens if they are not needed */
+}
+
+ 
+
+/* CSS for mobile-first */
+.responsive-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsive-flex > .col-xs-12.col-sm-6.col-md-6:nth-child(2) { /* This targets the text block */
+    order: 1;
+}
+
+.responsive-flex > .col-xs-12.col-sm-6.col-md-6:nth-child(1) { /* This targets the carousel block */
+    order: 2;
+}
+
+/* CSS for larger screens where you want the original layout */
+@media (min-width: 768px) {
+    .responsive-flex {
+        flex-direction: row;
+    }
+
+    .responsive-flex > .col-xs-12.col-sm-6.col-md-6:nth-child(2) {
+        order: 2;
+    }
+
+    .responsive-flex > .col-xs-12.col-sm-6.col-md-6:nth-child(1) {
+        order: 1;
+    }
+}
+ 
+
+.logo-dark, .logo-light {
+    width: 300px;
+    height: 100px;
+ 
+}
+ 
+ 
+
+
+.image-container2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+	
+	 
+}
+
+.desktop-image2 {
+    display: block;
+	width: 100%;
+}
+
+.mobile-image2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-image2 {
+        display: none;
+    }
+
+    .mobile-image2 {
+        display: block;
+    }
+}
+
+.image-container3 {
+    height: 85vh;  /* This means 50% of the viewport's height */
+    overflow: hidden;
+}
+
+
+ /* events css starts here */
+
+ .slide--headline2 {
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 60px;
+	margin-bottom: 30px;
+	/* text-transform: capitalize; */
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 36px;
+	 
+
+	 
+}
+
+
+ @media only screen and (min-width: 320px) and (max-width: 767px) {
+	.slider .slide--headline2 {
+		font-size: 24px;
+		line-height: 1.2;
+		margin-top:-275px;
+		font-weight: 400;
+		margin-left: 20px;
+	}
+	
+	}
+	
+	
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		.slide--headline2 {
+		font-size: 20px;
+		line-height: 1.2;
+		margin-top: -200%;
+	
+	}
+	}
+ 
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.image-container4 {
+		height: 75vh;
+		overflow: hidden;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.image-container4 {
+		height: 90vh;
+		overflow: hidden;
+	}
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.slide--bio2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added some padding for better visual effect */
+   
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+ 
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.slide--bio2 {
+        /* Your styles for mobile go here. For example: */
+      /* Adjusting padding for smaller screens */
+ 
+		padding: 5px; /* Stack items vertically if needed */
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slide--bio2 {
+        /* Your styles for mobile go here. For example: */
+      /* Adjusting padding for smaller screens */
+        flex-direction: column;
+		padding: 10px; /* Stack items vertically if needed */
+    }
+}
+
+.slide--bio2 p {
+    color: white;
+    font-size: 1.5rem; /* Base font-size */
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4; /* Adjusts the spacing between lines */
+    margin: 5px; /* Removes default margin of p */
+margin-top: 27%;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets */
+@media (max-width: 992px) {
+    .slide--bio2 p {
+        font-size: 1.3rem;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+    .slide--bio2 p {
+        font-size: 1.1rem;
+		margin-top: 10%;
+    }
+}
+
+ 
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .slide--bio2 p {
+        font-size: 1rem;
+    }
+}
+
+
+.grey-container {
+    padding: 20px;
+    background-color: #f3ead8; /* Bootstrap's primary blue color, you can adjust as needed */
+    color: white; /* Text color, assuming you want it to be white */
+	padding-bottom: 20px;
+	margin-top: -7%;
+}
+
+@media (min-width: 1201px) {
+    .grey-container {
+		margin-top: -6%; /* Adjust styles for large desktop view or keep as is */
+    }
+}
+
+.event-text {
+    font-family: 'Poppins', sans-serif; /* Using Arial for example, feel free to use any preferred font */
+    font-size: 1.2rem; /* This makes the text slightly larger than the default for emphasis */
+    font-weight: 400; /* Makes the text bold for emphasis */
+    color: #333; /* Dark color for readability, adjust as per your site's theme */
+    margin-bottom: 1.5rem; /* Adds more space below this paragraph for separation */
+    line-height: 1.6; /* For better readability */
+ 
+ 
+
+}
+
+@media (max-width: 576px) {
+    .website-text {
+		margin-left: 0%;
+		
+    }
+}
+
+
+.new-heading-event{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem; 
+    font-weight: 650; 
+    color: #1b3a66; 
+    margin-bottom: 1rem; 
+    text-align: left; 
+ /* margin-left: 18px; */
+    padding-top: 5.5rem; 
+	margin-top: 50px;
+ 
+}
+
+/* For mobile screens (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .new-heading-event {
+        font-size: 2rem; 
+		margin-top: 0px;
+		padding-top: 3.5rem;
+		/* Adjust font-size for mobile */
+    }
+}
+
+/* For tablet screens (from 577px to 992px) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .new-heading-event {
+        font-size: 2.8rem;  /* Adjust font-size for tablet */
+    }
+}
+
+/* For desktop screens (above 992px) - Optional since we've defined the default style above */
+@media only screen and (min-width: 993px) {
+    .new-heading-event {
+        font-size: 2.5rem;  /* This can stay the same or be adjusted */
+    }
+}
+
+
+.custom-event-bg4 {
+    position: relative;
+    color:#c6d8ce; 
+	padding-bottom: 20px;
+	margin-right: 50px !important;
+    margin-left: 50px !important;
+	margin-top: 10px;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    .custom-event-bg4 {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        /* Add or modify any other styles for mobile screens here */
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .custom-event-bg4 {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+        /* Add or modify any other styles for tablet screens here */
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-caption p {
+        color: white !important; /* Use !important only if necessary */
+		margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-caption2 p {
+        color: white !important; /* Use !important only if necessary */
+		margin-top: 10px;
+    }
+}
+
+
+.contact-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center; /* vertically aligns icon with text */
+	margin-bottom: 10px; /* spacing between items */
+}
+
+.contact-icon {
+	margin-right: 15px; /* space between icon and text */
+}
+
+.white-hr {
+    border: 0; /* Remove the default border */
+    border-top: 1px solid white; /* Set the top border to white color */
+    width: 100%; /* Set the width to full width */
+    margin: 10px 0; /* Add margin to space out the hr from content */
+}
+
+/* Default styles (for mobile) */
+p a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px; /* Example font-size for mobile */
+}
+
+/* Styles for desktop screens */
+@media (min-width: 768px) { /* This is a common breakpoint for tablet/desktop screens */
+    p a {
+        font-size: 16px; /* Example font-size for desktop */
+    }
+}
+ 
+
+.custom-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* For center-aligning the text caption */
+}
+
+
+.custom-image {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    display: block; /* Removes any whitespace below the image */
+    margin: 0 auto; /* Horizontally center the image */
+}
+
+ 
+.footer-new
+{
+margin-top:40px;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .footer-new
+{
+margin-top:40px;
+}
+}
+
+.footer-new-icons{
+
+	margin-left:-10px;
+}
+
+.footer-text-new
+{
+	font-size: 16px;
+	text-align: left;
+	margin-left: -15px;
+}
+
+.footer-icons-index
+{
+	margin-left: -24px;
+}
+
+/* Custom style for <hr> */
+.custom-hr {
+    border: 0;
+    height: 0.5px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    
+}
+
+/* Hide .custom-hr on desktop */
+@media (min-width: 992px) {
+    .custom-hr {
+        display: none;
+    }
+}
+
+
+
+
+.slide--bio2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added some padding for better visual effect */
+   
+}
+
+ 
+ 
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.slide--bio3 {
+        /* Your styles for mobile go here. For example: */
+      /* Adjusting padding for smaller screens */
+ 
+		padding: 5px; /* Stack items vertically if needed */
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slide--bio3 {
+        /* Your styles for mobile go here. For example: */
+      /* Adjusting padding for smaller screens */
+        flex-direction: column;
+		padding: 10px; /* Stack items vertically if needed */
+    }
+}
+
+.slide--bio3 p {
+    color: white;
+    font-size: 1.5rem; /* Base font-size */
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4; /* Adjusts the spacing between lines */
+    margin: 5px; /* Removes default margin of p */
+	 
+ 
+}
+
+/* Responsive Adjustments */
+
+/* For tablets */
+@media (max-width: 992px) {
+    .slide--bio3 p {
+        font-size: 1.3rem;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+    .slide--bio3 p {
+        font-size: 1.1rem;
+		margin-top: 3%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .slide--bio3 p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .row-content2 .col-sm-8, .row-content2 .col-sm-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .desktop-image2 {
+        display: none;
+    }
+    .mobile-image2 {
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .row-content2 .col-sm-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .row-content2 .col-sm-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .desktop-image2 {
+        display: block;
+    }
+    .mobile-image2 {
+        display: none;
+    }
+}
